@@ -1,0 +1,202 @@
+body {
+    background-color : maroon;
+    color : white;
+}
+
+a {
+    /* text-decoration: none; */
+    color: white;
+    font-size: 2.0rem;
+}
+
+.a_margin {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .bui_sectionA::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .bui_sectionB::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .bui_section {
+        float: left;
+        width: 22%;
+        margin-right: 2%;
+    }
+
+    .bui_section_namaA::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .bui_section_namaB::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .bui_section_namaC::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .bui_section_nama {
+        float: left;
+        width: 22%;
+        /*height: 50px;*/
+        margin-right: 2%;
+    }
+
+    .bui_section_drink {
+        float: left;
+        width: 33%;
+        /*height: 50px;*/
+        margin-right: 2%;
+    }
+
+}
+
+.bui_section_height {
+    height: 170px;
+}
+
+.bui_section_nama_height {
+    height: 35px;
+}
+
+.bui {
+    float: left;
+    width: 60%;
+}
+
+.val {
+    float: left;
+    width: 25%;
+    text-align: right;
+}
+
+.hon {
+    float: left;
+}
+
+.aji_section {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.total_section {
+    margin-top: 8%;
+}
+
+.bui {
+    float : left;
+    width: 52%;
+}
+
+bui_nama {
+    float: left;
+    width: 60%;
+}
+
+.val {
+    float : left;
+    width: 23%;
+    text-align : right;
+}
+
+.bui_section_end {
+    clear: left;
+    background: maroon;
+    width: 15%;
+    margin-right: 2%;
+}
+
+.bui_section_start {
+    clear : left;
+    background: maroon;
+    width: 15%;
+    margin-right: 2%;
+}
+
+
+.stripe {
+    line-height: 1.5;
+    background-image: linear-gradient( rgba(0,0,0,.2) 50%, transparent 0 );
+    background-size: auto 3em;
+    background-origin: content-box;
+}
+
+.bui_section_shiro {
+    float : left;
+    background : purple;
+    width : 20%;
+}
+
+.bui_title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    /*color: black;*/
+}
+.bui_title_nama {
+    float: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.copyright {
+    clear : both;
+    padding-top: 3%;
+}
+
+.nama_align {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bui_section_nama .val {
+    margin-top: 1%;
+}
+
+.bui_section_drink .val {
+    margin-top: 1%;
+    width: 24%;
+}
+
+.bui_section_nama .hon {
+    margin-top: 1%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.bui_section_drink .hon {
+    margin-top: 1%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+h1.title {
+    text-shadow: 0 -2px 3px #000, 0 -4px 3px #666, 0 -6px 6px #AAA, 0 -8px 9px #FFF;
+    hyphones: manual;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
