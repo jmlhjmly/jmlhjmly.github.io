@@ -1,8 +1,4 @@
-﻿const SHIO_TITLE   = 'shio';
-const TARE_TITLE  = 'tare';
-const SUYAKI_TITLE = 'suyaki';
-const MISO_TITLE   = 'miso';
-
+﻿
 //焼き　部位がプロパティとなる
 const BuiYaki   = function(shio, tare, suyaki, miso) {
     this.shio   = shio;
@@ -66,7 +62,7 @@ window.onload = function() {
     const rebaObj = new BuiYaki(38, 48, 8, 19);
     const rebaArray = rebaObj.getAjiArray();
     //シロ
-    const shiroObj = new BuiYaki(2, 32, 24, 10);
+    const shiroObj = new BuiYaki(2, 32, 26, 10);
     const shiroArray = shiroObj.getAjiArray();
     //ガツ
     const gatsuObj = new BuiYaki(25, 4, 9, 0);
@@ -78,7 +74,7 @@ window.onload = function() {
     const nankotsuObj = new BuiYaki(32, 10, 22, 0);
     const nankotsuArray = nankotsuObj.getAjiArray();
     //ハツ
-    const hatsuObj = new BuiYaki(59, 0, 4, 0);
+    const hatsuObj = new BuiYaki(61, 0, 4, 0);
     const hatsuArray = hatsuObj.getAjiArray();
     //カシラ
     const kashiraObj = new BuiYaki(41, 24, 27, 0);
@@ -88,15 +84,15 @@ window.onload = function() {
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(46, 12, 38, 32, 11, 16, 15, 5, 59);
+    const namaObj = new BuiNama(47, 12, 38, 32, 11, 16, 16, 5, 59);
     const namaArray = namaObj.getNamaArray();
 
     //NikomiOshinko(煮込み, ホネ, お新香, 大根)
-    const nikomiOshinkoObj = new NikomiOshinko(50, 20, 51, 81);
+    const nikomiOshinkoObj = new NikomiOshinko(50, 20, 51, 82);
     const nikomiOshinkoArray = nikomiOshinkoObj.getNikomiOshinkoArray();
 
     //drinkObj(ウメ, ブドウ, ビール, 小瓶, ウーロン茶)
-    const drinkObj = new Drink(378.5, 53, 1, 2, 2);
+    const drinkObj = new Drink(380.5, 54, 1, 2, 2);
     const drinkArray = drinkObj.getDrinkArray();
 
 
