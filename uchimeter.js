@@ -1,68 +1,4 @@
 ﻿
-//焼き　部位がプロパティとなる
-const BuiYaki   = function(shio, tare, suyaki, miso) {
-    this.shio   = shio;
-    this.tare   = tare;
-    this.suyaki = suyaki;
-    this.miso   = miso;
-    this.result = this.shio + this.tare + this.suyaki + this.miso;
-    this.total  = function() { return this.result; };
-    this.getAjiArray = function() {
-        const ajiArray = [this.shio, this.tare, this.suyaki, this.miso, this.boil];
-        return ajiArray;
-    };
-};
-
-//ナマ　部位がプロパティとなる
-const BuiNama = function(reba, shiro, gatsu, abura, nankotsu, hatsu, teppou, kobukuro, tan) {
-    this.reba = reba;
-    this.shiro = shiro;
-    this.gatsu = gatsu;
-    this.abura = abura;
-    this.nankotsu = nankotsu;
-    this.hatsu = hatsu;
-    this.teppou = teppou;
-    this.kobukuro = kobukuro;
-    this.tan = tan;
-    this.getNamaArray = function() {
-        const namaArray = [this.reba, this.shiro, this.gatsu, this.abura, this.nankotsu, this.hatsu, this.teppou, this.kobukuro, this.tan];
-        return namaArray;
-    }
-}
-
-//煮込み
-const Nikomi = function(nikomi, hone) {
-    this.nikomi = nikomi;
-    this.hone = hone;
-    this.getNikomiArray = function() {
-        const nikomiArray = [this.nikomi, this.hone];
-        return nikomiArray;
-    }
-}
-
-//お新香
-const Oshinko = function(oshinko, daikon) {
-    this.oshinko = oshinko;
-    this.daikon = daikon;
-    this.getOshinkoArray = function() {
-        const oshinkoArray = [this.oshinko, this.daikon];
-        return oshinkoArray;
-    }
-}
-
-//飲みもの
-const Drink = function(ume, budo, beer, kobin, oolong) {
-    this.ume = ume;
-    this.budo = budo;
-    this.beer = beer;
-    this.kobin = kobin;
-    this.oolong = oolong;
-    this.getDrinkArray = function() {
-        const drinkArray = [this.ume, this.budo, this.beer, this.kobin, this.oolong];
-        return drinkArray;
-    }
-}
-
 window.onload = function() {
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
@@ -109,76 +45,76 @@ window.onload = function() {
 
 
     //レバ焼き
-    const reba_tare_elem   = document.getElementById('reba_tare');
-    const reba_shio_elem   = document.getElementById('reba_shio');
-    const reba_suyaki_elem = document.getElementById('reba_suyaki');
-    const reba_miso_elem   = document.getElementById('reba_miso');
-    const reba_total_elem  = document.getElementById('reba_total');
+    const reba_tare_elem   = document.getElementById(REBA_TARE);
+    const reba_shio_elem   = document.getElementById(REBA_SHIO);
+    const reba_suyaki_elem = document.getElementById(REBA_SUYAKI);
+    const reba_miso_elem   = document.getElementById(REBA_MISO);
+    const reba_total_elem  = document.getElementById(REBA_TOTAL);
     //シロ焼き
-    const shiro_tare_elem   = document.getElementById('shiro_tare');
-    const shiro_shio_elem   = document.getElementById('shiro_shio');
-    const shiro_suyaki_elem = document.getElementById('shiro_suyaki');
-    const shiro_miso_elem   = document.getElementById('shiro_miso');
-    const shiro_total_elem  = document.getElementById('shiro_total');
+    const shiro_tare_elem   = document.getElementById(SHIRO_TARE);
+    const shiro_shio_elem   = document.getElementById(SHIRO_SHIO);
+    const shiro_suyaki_elem = document.getElementById(SHIRO_SUYAKI);
+    const shiro_miso_elem   = document.getElementById(SHIRO_MISO);
+    const shiro_total_elem  = document.getElementById(SHIRO_TOTAL);
     //ガツ焼き
-    const gatsu_tare_elem   = document.getElementById('gatsu_tare');
-    const gatsu_shio_elem   = document.getElementById('gatsu_shio');
-    const gatsu_suyaki_elem = document.getElementById('gatsu_suyaki');
-    const gatsu_miso_elem   = document.getElementById('gatsu_miso');
-    const gatsu_total_elem  = document.getElementById('gatsu_total');
+    const gatsu_tare_elem   = document.getElementById(GATSU_TARE);
+    const gatsu_shio_elem   = document.getElementById(GATSU_SHIO);
+    const gatsu_suyaki_elem = document.getElementById(GATSU_SUYAKI);
+    const gatsu_miso_elem   = document.getElementById(GATSU_MISO);
+    const gatsu_total_elem  = document.getElementById(GATSU_TOTAL);
     //アブラ焼き
-    const abura_tare_elem   = document.getElementById('abura_tare');
-    const abura_shio_elem   = document.getElementById('abura_shio');
-    const abura_suyaki_elem = document.getElementById('abura_suyaki');
-    const abura_miso_elem   = document.getElementById('abura_miso');
-    const abura_total_elem  = document.getElementById('abura_total');
+    const abura_tare_elem   = document.getElementById(ABURA_TARE);
+    const abura_shio_elem   = document.getElementById(ABURA_SHIO);
+    const abura_suyaki_elem = document.getElementById(ABURA_SUYAKI);
+    const abura_miso_elem   = document.getElementById(ABURA_MISO);
+    const abura_total_elem  = document.getElementById(ABURA_TOTAL);
     //ナンコツ焼き
-    const nankotsu_tare_elem   = document.getElementById('nankotsu_tare');
-    const nankotsu_shio_elem   = document.getElementById('nankotsu_shio');
-    const nankotsu_suyaki_elem = document.getElementById('nankotsu_suyaki');
-    const nankotsu_miso_elem   = document.getElementById('nankotsu_miso');
-    const nankotsu_total_elem  = document.getElementById('nankotsu_total');
+    const nankotsu_tare_elem   = document.getElementById(NANKOTSU_TARE);
+    const nankotsu_shio_elem   = document.getElementById(NANKOTSU_SHIO);
+    const nankotsu_suyaki_elem = document.getElementById(NANKOTSU_SUYAKI);
+    const nankotsu_miso_elem   = document.getElementById(NANKOTSU_MISO);
+    const nankotsu_total_elem  = document.getElementById(NANKOTSU_TOTAL);
     //ハツ焼き
-    const hatsu_tare_elem   = document.getElementById('hatsu_tare');
-    const hatsu_shio_elem   = document.getElementById('hatsu_shio');
-    const hatsu_suyaki_elem = document.getElementById('hatsu_suyaki');
-    const hatsu_miso_elem   = document.getElementById('hatsu_miso');
-    const hatsu_total_elem  = document.getElementById('hatsu_total');
+    const hatsu_tare_elem   = document.getElementById(HATSU_TARE);
+    const hatsu_shio_elem   = document.getElementById(HATSU_SHIO);
+    const hatsu_suyaki_elem = document.getElementById(HATSU_SUYAKI);
+    const hatsu_miso_elem   = document.getElementById(HATSU_MISO);
+    const hatsu_total_elem  = document.getElementById(HATSU_TOTAL);
     //カシラ焼き
-    const kashira_tare_elem   = document.getElementById('kashira_tare');
-    const kashira_shio_elem   = document.getElementById('kashira_shio');
-    const kashira_suyaki_elem = document.getElementById('kashira_suyaki');
-    const kashira_miso_elem   = document.getElementById('kashira_miso');
-    const kashira_total_elem  = document.getElementById('kashira_total');
+    const kashira_tare_elem   = document.getElementById(KASHIRA_TARE);
+    const kashira_shio_elem   = document.getElementById(KASHIRA_SHIO);
+    const kashira_suyaki_elem = document.getElementById(KASHIRA_SUYAKI);
+    const kashira_miso_elem   = document.getElementById(KASHIRA_MISO);
+    const kashira_total_elem  = document.getElementById(KASHIRA_TOTAL);
     //ツル焼き
-    const tsuru_tare_elem   = document.getElementById('tsuru_tare');
-    const tsuru_shio_elem   = document.getElementById('tsuru_shio');
-    const tsuru_suyaki_elem = document.getElementById('tsuru_suyaki');
-    const tsuru_miso_elem   = document.getElementById('tsuru_miso');
-    const tsuru_total_elem  = document.getElementById('tsuru_total');
+    const tsuru_tare_elem   = document.getElementById(TSURU_TARE);
+    const tsuru_shio_elem   = document.getElementById(TSURU_SHIO);
+    const tsuru_suyaki_elem = document.getElementById(TSURU_SUYAKI);
+    const tsuru_miso_elem   = document.getElementById(TSURU_MISO);
+    const tsuru_total_elem  = document.getElementById(TSURU_TOTAL);
 
     //ナマ
-    const reba_nama_elem     = document.getElementById('reba_nama');        //レバ
-    const shiro_nama_elem    = document.getElementById('shiro_nama');       //シロ
-    const gatsu_nama_elem    = document.getElementById('gatsu_nama');       //ガツ
-    const abura_nama_elem    = document.getElementById('abura_nama');       //アブラ
-    const nankotsu_nama_elem = document.getElementById('nankotsu_nama');    //ナンコツ
-    const hatsu_nama_elem    = document.getElementById('hatsu_nama');       //ハツ
-    const teppou_nama_elem   = document.getElementById('teppou_nama');      //テッポウ
-    const kobukuro_nama_elem = document.getElementById('kobukuro_nama');    //コブクロ
-    const tan_nama_elem      = document.getElementById('tan_nama');         //タン
+    const reba_nama_elem     = document.getElementById(REBA_NAMA);        //レバ
+    const shiro_nama_elem    = document.getElementById(SHIRO_NAMA);       //シロ
+    const gatsu_nama_elem    = document.getElementById(GATSU_NAMA);       //ガツ
+    const abura_nama_elem    = document.getElementById(ABURA_NAMA);       //アブラ
+    const nankotsu_nama_elem = document.getElementById(NANKOTSU_NAMA);    //ナンコツ
+    const hatsu_nama_elem    = document.getElementById(HATSU_NAMA);       //ハツ
+    const teppou_nama_elem   = document.getElementById(TEPPOU_NAMA);      //テッポウ
+    const kobukuro_nama_elem = document.getElementById(KOBUKURO_NAMA);    //コブクロ
+    const tan_nama_elem      = document.getElementById(TAN_NAMA);         //タン
 
-    const nikomi_elem      = document.getElementById('nikomi');       //煮込み
-    const hone_elem        = document.getElementById('hone');         //ホネ
+    const nikomi_elem      = document.getElementById(NIKOMI);       //煮込み
+    const hone_elem        = document.getElementById(HONE);         //ホネ
 
-    const oshinko_elem      = document.getElementById('oshinko');        //お新香
-    const daikon_elem       = document.getElementById('daikon');         //大根
+    const oshinko_elem      = document.getElementById(OSHINKO);        //お新香
+    const daikon_elem       = document.getElementById(DAIKON);         //大根
 
-    const ume_elem          = document.getElementById('ume');         //ウメ
-    const budo_elem         = document.getElementById('budo');         //ブドウ
-    const beer_elem         = document.getElementById('beer');         //ビール
-    const kobin_elem        = document.getElementById('kobin');         //小瓶
-    const oolong_elem       = document.getElementById('oolong');         //ウーロン茶
+    const ume_elem          = document.getElementById(UME);         //ウメ
+    const budo_elem         = document.getElementById(BUDO);         //ブドウ
+    const beer_elem         = document.getElementById(BEER);         //ビール
+    const kobin_elem        = document.getElementById(KOBIN);         //小瓶
+    const oolong_elem       = document.getElementById(OOLONG);         //ウーロン茶
 
 
     //レバ焼き
