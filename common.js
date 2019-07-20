@@ -77,6 +77,9 @@ const BEER         = 'beer';              //ビール
 const KOBIN        = 'kobin';             //小瓶
 const OOLONG       = 'oolong';            //ウーロン茶
 
+const ADDRESS      = '東京都葛飾区立石1-18-8';
+const TEL          = '03-3697-5738';
+
 //焼き　部位がプロパティとなる
 const BuiYaki   = function(shio, tare, suyaki, miso) {
     this.shio   = shio;
