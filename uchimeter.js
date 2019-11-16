@@ -28,7 +28,7 @@ window.onload = function() {
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(67, 19, 47, 39, 14, 17, 24, 12, 85);
+    const namaObj = new BuiNama(67, 19, 47, 39, 16, 17, 24, 12, 85);
     const namaArray = namaObj.getNamaArray();
     
     //Nikomi(煮込み, ホネ)
