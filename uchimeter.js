@@ -3,44 +3,44 @@ window.onload = function() {
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
     //レバ
-    const rebaObj = new BuiYaki(68, 102, 8, 23);
+    const rebaObj = new BuiYaki(69, 105, 8, 23);
     const rebaArray = rebaObj.getAjiArray();
     //シロ
-    const shiroObj = new BuiYaki(2, 42, 60, 10);
+    const shiroObj = new BuiYaki(2, 42, 62, 10);
     const shiroArray = shiroObj.getAjiArray();
     //ガツ
     const gatsuObj = new BuiYaki(29, 6, 9, 0);
     const gatsuArray = gatsuObj.getAjiArray();
     //アブラ
-    const aburaObj = new BuiYaki(31, 135, 4, 14);
+    const aburaObj = new BuiYaki(32, 137, 4, 14);
     const aburaArray = aburaObj.getAjiArray();
     //ナンコツ
-    const nankotsuObj = new BuiYaki(48, 12, 22, 0);
+    const nankotsuObj = new BuiYaki(48, 14, 22, 0);
     const nankotsuArray = nankotsuObj.getAjiArray();
     //ハツ
-    const hatsuObj = new BuiYaki(110, 2, 6, 1);
+    const hatsuObj = new BuiYaki(111, 2, 6, 1);
     const hatsuArray = hatsuObj.getAjiArray();
     //カシラ
-    const kashiraObj = new BuiYaki(46, 28, 49, 2);
+    const kashiraObj = new BuiYaki(46, 28, 50, 2);
     const kashiraArray = kashiraObj.getAjiArray();
     //ツル
     const tsuruObj = new BuiYaki(11, 6, 0, 0);
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(74, 22, 52, 40, 18, 17, 25, 13, 85);
+    const namaObj = new BuiNama(76, 24, 53, 40, 18, 17, 26, 13, 86);
     const namaArray = namaObj.getNamaArray();
     
     //Nikomi(煮込み, ホネ)
-    const nikomiObj = new Nikomi(60, 35);
+    const nikomiObj = new Nikomi(61, 35);
     const nikomiArray = nikomiObj.getNikomiArray();
 
     //Oshinko(お新香, 大根)
-    const oshinkoObj = new Oshinko(79, 129);
+    const oshinkoObj = new Oshinko(81, 130);
     const oshinkoArray = oshinkoObj.getOshinkoArray();
 
     //drinkObj(ウメ, ブドウ, ビール, 小瓶, ウーロン茶)
-    const drinkObj = new Drink(505.5, 132, 1, 2, 2);
+    const drinkObj = new Drink(511.5, 136, 1, 2, 2);
     const drinkArray = drinkObj.getDrinkArray();
 
     //レバ焼き
