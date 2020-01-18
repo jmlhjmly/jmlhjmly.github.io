@@ -3,7 +3,7 @@ window.onload = function() {
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
     //レバ
-    const rebaObj = new BuiYaki(69, 107, 8, 23);
+    const rebaObj = new BuiYaki(69, 109, 8, 23);
     const rebaArray = rebaObj.getAjiArray();
     //シロ
     const shiroObj = new BuiYaki(2, 42, 62, 10);
@@ -28,7 +28,7 @@ window.onload = function() {
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(76, 25, 54, 40, 20, 17, 26, 13, 86);
+    const namaObj = new BuiNama(76, 25, 55, 41, 20, 17, 26, 13, 86);
     const namaArray = namaObj.getNamaArray();
     
     //Nikomi(煮込み, ホネ)
@@ -36,11 +36,11 @@ window.onload = function() {
     const nikomiArray = nikomiObj.getNikomiArray();
 
     //Oshinko(お新香, 大根)
-    const oshinkoObj = new Oshinko(82, 131);
+    const oshinkoObj = new Oshinko(82, 132);
     const oshinkoArray = oshinkoObj.getOshinkoArray();
 
     //drinkObj(ウメ, ブドウ, ビール, 小瓶, ウーロン茶)
-    const drinkObj = new Drink(514.5, 138, 1, 2, 2);
+    const drinkObj = new Drink(515.5, 139, 1, 2, 2);
     const drinkArray = drinkObj.getDrinkArray();
 
     //レバ焼き
