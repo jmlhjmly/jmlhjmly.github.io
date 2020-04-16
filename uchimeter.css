@@ -74,17 +74,6 @@ a {
     height: 35px;
 }
 
-.bui {
-    float: left;
-    width: 60%;
-}
-
-.val {
-    float: left;
-    width: 25%;
-    text-align: right;
-}
-
 .hon {
     float: left;
 }
@@ -113,6 +102,7 @@ bui_nama {
     float : left;
     width: 23%;
     text-align : right;
+    color : gray;
 }
 
 .bui_section_end {
