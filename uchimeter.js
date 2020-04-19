@@ -1,5 +1,47 @@
 ﻿
 window.onload = function() {
+    
+    $( function() {
+    sio = [ [ rebaArray[0], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ], 
+            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
+    tare = [ [ rebaArray[1], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ], 
+            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
+    suyaki = [ [ rebaArray[2], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ], 
+            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
+    miso = [ [ rebaArray[3], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ],
+            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
+    $ . jqplot(
+        'jqPlot-sample',
+        [
+            sio, tare, suyaki, miso
+        ],
+        {
+            seriesDefaults: {
+                renderer: $ . jqplot . BarRenderer,
+                pointLabels: { show: true, location: 'e', edgeTolerance: -15 },
+                rendererOptions: {
+                    barDirection: 'horizontal'
+                }
+            },
+            axes: {
+                yaxis: {
+                    renderer: $ . jqplot . CategoryAxisRenderer,
+                }
+            },
+           series:[
+               {label:'塩'},
+               {label:'タレ'},
+               {label:'素焼き'}, 
+               {label:'味噌'},
+           ],
+           legend: {
+               show: true,
+               location: 'e',
+               placement: 'outside'
+           }      
+        }
+    );
+} );
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
     //レバ
