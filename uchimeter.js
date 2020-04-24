@@ -2,14 +2,14 @@
 window.onload = function() {
     
     $( function() {
-    sio = [ [ rebaArray[0], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ], 
-            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
-    tare = [ [ rebaArray[1], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ], 
-            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
-    suyaki = [ [ rebaArray[2], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ], 
-            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
-    miso = [ [ rebaArray[3], 'レバ' ], [ 100, 'シロ' ], [ 100, 'ガツ' ], [ 100, 'アブラ' ],
-            [ 100, 'ナンコツ' ], [ 100, 'ハツ' ], [ 100, 'カシラ' ], [ 100, 'ツル' ] ];
+    sio = [ [ rebaArray[0], 'レバ' ], [ shiroArray[0], 'シロ' ], [ gatsuArray[0], 'ガツ' ], [ aburaArray[0], 'アブラ' ], 
+            [ nankotsuArray[0], 'ナンコツ' ], [ hatsuArray[0], 'ハツ' ], [ kashiraArray[0], 'カシラ' ], [ tsuruArray[0], 'ツル' ] ];
+    tare = [ [ rebaArray[1], 'レバ' ], [ shiroArray[1], 'シロ' ], [ gatsuArray[1], 'ガツ' ], [ aburaArray[1], 'アブラ' ], 
+            [ nankotsuArray[1], 'ナンコツ' ], [ hatsuArray[1], 'ハツ' ], [ kashiraArray[1], 'カシラ' ], [ tsuruArray[1], 'ツル' ] ];
+    suyaki = [ [ rebaArray[2], 'レバ' ], [ shiroArray[2], 'シロ' ], [ gatsuArray[2], 'ガツ' ], [ aburaArray[2], 'アブラ' ], 
+            [ nankotsuArray[2], 'ナンコツ' ], [ hatsuArray[2], 'ハツ' ], [ kashiraArray[2], 'カシラ' ], [ tsuruArray[2], 'ツル' ] ];
+    miso = [ [ rebaArray[3], 'レバ' ], [ shiroArray[3], 'シロ' ], [ gatsuArray[3], 'ガツ' ], [ aburaArray[3], 'アブラ' ],
+            [ nankotsuArray[3], 'ナンコツ' ], [ hatsuArray[3], 'ハツ' ], [ kashiraArray[3], 'カシラ' ], [ tsuruArray[3], 'ツル' ] ];
     $ . jqplot(
         'jqPlot-sample',
         [
@@ -20,7 +20,8 @@ window.onload = function() {
                 renderer: $ . jqplot . BarRenderer,
                 pointLabels: { show: true, location: 'e', edgeTolerance: -15 },
                 rendererOptions: {
-                    barDirection: 'horizontal'
+                    barDirection: 'horizontal',
+                    barWidth: null
                 }
             },
             axes: {

@@ -102,7 +102,7 @@ bui_nama {
     float : left;
     width: 23%;
     text-align : right;
-    color : gray;
+    /* color : gray; */
 }
 
 .bui_section_end {
