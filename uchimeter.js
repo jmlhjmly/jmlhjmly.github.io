@@ -3,44 +3,44 @@ window.onload = function() {
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
     //レバ
-    const rebaObj = new BuiYaki(81, 136, 8, 25);
+    const rebaObj = new BuiYaki(85, 141, 8, 25);
     const rebaArray = rebaObj.getAjiArray();
     //シロ
-    const shiroObj = new BuiYaki(2, 51, 91, 10);
+    const shiroObj = new BuiYaki(4, 53, 95, 10);
     const shiroArray = shiroObj.getAjiArray();
     //ガツ
-    const gatsuObj = new BuiYaki(40, 14, 11, 0);
+    const gatsuObj = new BuiYaki(46, 16, 11, 0);
     const gatsuArray = gatsuObj.getAjiArray();
     //アブラ
-    const aburaObj = new BuiYaki(45, 170, 14, 16);
+    const aburaObj = new BuiYaki(47, 178, 15, 17);
     const aburaArray = aburaObj.getAjiArray();
     //ナンコツ
     const nankotsuObj = new BuiYaki(56, 12, 28, 0);
     const nankotsuArray = nankotsuObj.getAjiArray();
     //ハツ
-    const hatsuObj = new BuiYaki(127, 2, 8, 1);
+    const hatsuObj = new BuiYaki(127, 2, 10, 1);
     const hatsuArray = hatsuObj.getAjiArray();
     //カシラ
-    const kashiraObj = new BuiYaki(51, 30, 62, 4);
+    const kashiraObj = new BuiYaki(53, 30, 62, 4);
     const kashiraArray = kashiraObj.getAjiArray();
     //ツル
     const tsuruObj = new BuiYaki(13, 8, 0, 0);
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(108, 34, 77, 52, 25, 19, 37, 16, 91);
+    const namaObj = new BuiNama(114, 35, 84, 52, 25, 19, 37, 16, 93);
     const namaArray = namaObj.getNamaArray();
     
     //Nikomi(煮込み, ホネ)
-    const nikomiObj = new Nikomi(74, 40);
+    const nikomiObj = new Nikomi(75, 40);
     const nikomiArray = nikomiObj.getNikomiArray();
 
     //Oshinko(お新香, 大根)
-    const oshinkoObj = new Oshinko(96, 176);
+    const oshinkoObj = new Oshinko(97, 186);
     const oshinkoArray = oshinkoObj.getOshinkoArray();
 
     //drinkObj(ウメ, ブドウ, ビール, 小瓶, ウーロン茶)
-    const drinkObj = new Drink(610.5, 198, 1, 2, 2);
+    const drinkObj = new Drink(631.5, 207.5, 1, 2, 2);
     const drinkArray = drinkObj.getDrinkArray();
 
     //レバ焼き
