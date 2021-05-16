@@ -3,44 +3,44 @@ window.onload = function() {
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
     //レバ
-    const rebaObj = new BuiYaki(96, 172, 8, 25);
+    const rebaObj = new BuiYaki(96, 177, 8, 25);
     const rebaArray = rebaObj.getAjiArray();
     //シロ
-    const shiroObj = new BuiYaki(5, 70, 112, 11);
+    const shiroObj = new BuiYaki(5, 70, 117, 11);
     const shiroArray = shiroObj.getAjiArray();
     //ガツ
-    const gatsuObj = new BuiYaki(53, 22, 12, 0);
+    const gatsuObj = new BuiYaki(56, 22, 12, 0);
     const gatsuArray = gatsuObj.getAjiArray();
     //アブラ
-    const aburaObj = new BuiYaki(70, 202, 20, 17);
+    const aburaObj = new BuiYaki(72, 203, 26, 17);
     const aburaArray = aburaObj.getAjiArray();
     //ナンコツ
     const nankotsuObj = new BuiYaki(60, 12, 28, 0);
     const nankotsuArray = nankotsuObj.getAjiArray();
     //ハツ
-    const hatsuObj = new BuiYaki(142, 2, 10, 1);
+    const hatsuObj = new BuiYaki(144, 2, 10, 1);
     const hatsuArray = hatsuObj.getAjiArray();
     //カシラ
-    const kashiraObj = new BuiYaki(55, 35, 70, 4);
+    const kashiraObj = new BuiYaki(55, 35, 72, 4);
     const kashiraArray = kashiraObj.getAjiArray();
     //ツル
     const tsuruObj = new BuiYaki(14, 8, 0, 0);
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(141, 38, 103, 53, 32, 20, 44, 17, 100);
+    const namaObj = new BuiNama(144, 38, 108, 53, 32, 20, 45, 18, 102);
     const namaArray = namaObj.getNamaArray();
     
     //Nikomi(煮込み, ホネ)
-    const nikomiObj = new Nikomi(97, 40);
+    const nikomiObj = new Nikomi(102, 40);
     const nikomiArray = nikomiObj.getNikomiArray();
 
     //Oshinko(お新香, 大根)
-    const oshinkoObj = new Oshinko(108, 227);
+    const oshinkoObj = new Oshinko(109, 234);
     const oshinkoArray = oshinkoObj.getOshinkoArray();
 
     //drinkObj(ウメ, ブドウ, ビール, 小瓶, ウーロン茶)
-    const drinkObj = new Drink(735, 256.5, 1, 2, 2);
+    const drinkObj = new Drink(751, 266, 1, 2, 2);
     const drinkArray = drinkObj.getDrinkArray();
 
     //レバ焼き
