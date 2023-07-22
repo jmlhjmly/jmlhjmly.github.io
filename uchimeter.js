@@ -3,44 +3,44 @@ window.onload = function() {
 
     //BuiYaki(塩, タレ, 素焼き, 味噌)
     //レバ
-    const rebaObj = new BuiYaki(112, 208, 20, 25);
+    const rebaObj = new BuiYaki(112, 220, 26, 25);
     const rebaArray = rebaObj.getAjiArray();
     //シロ
-    const shiroObj = new BuiYaki(7, 81, 127, 11);
+    const shiroObj = new BuiYaki(7, 82, 127, 13);
     const shiroArray = shiroObj.getAjiArray();
     //ガツ
-    const gatsuObj = new BuiYaki(65, 26, 14, 0);
+    const gatsuObj = new BuiYaki(67, 28, 14, 0);
     const gatsuArray = gatsuObj.getAjiArray();
     //アブラ
-    const aburaObj = new BuiYaki(80, 227, 46, 22);
+    const aburaObj = new BuiYaki(86, 229, 52, 22);
     const aburaArray = aburaObj.getAjiArray();
     //ナンコツ
-    const nankotsuObj = new BuiYaki(66, 14, 28, 0);
+    const nankotsuObj = new BuiYaki(68, 14, 30, 0);
     const nankotsuArray = nankotsuObj.getAjiArray();
     //ハツ
-    const hatsuObj = new BuiYaki(160, 4, 14, 1);
+    const hatsuObj = new BuiYaki(166, 4, 16, 1);
     const hatsuArray = hatsuObj.getAjiArray();
     //カシラ
-    const kashiraObj = new BuiYaki(59, 42, 88, 4);
+    const kashiraObj = new BuiYaki(59, 42, 90, 4);
     const kashiraArray = kashiraObj.getAjiArray();
     //ツル
-    const tsuruObj = new BuiYaki(16, 8, 2, 0);
+    const tsuruObj = new BuiYaki(16, 10, 2, 0);
     const tsuruArray = tsuruObj.getAjiArray();
 
     //BuiNama(レバ, シロ, ガツ, アブラ, ナンコツ, ハツ, テッポウ, コブクロ, タン)
-    const namaObj = new BuiNama(167, 55, 132, 59, 37, 23, 52, 26, 120);
+    const namaObj = new BuiNama(171, 57, 137, 62, 38, 23, 54, 29, 125);
     const namaArray = namaObj.getNamaArray();
     
     //Nikomi(煮込み, ホネ)
-    const nikomiObj = new Nikomi(118, 42);
+    const nikomiObj = new Nikomi(123, 44);
     const nikomiArray = nikomiObj.getNikomiArray();
 
     //Oshinko(お新香, 大根)
-    const oshinkoObj = new Oshinko(122, 282);
+    const oshinkoObj = new Oshinko(126, 295);
     const oshinkoArray = oshinkoObj.getOshinkoArray();
 
     //drinkObj(ウメ, ブドウ, ビール, 小瓶, ウーロン茶)
-    const drinkObj = new Drink(877, 337, 1, 2, 2);
+    const drinkObj = new Drink(911, 360.5, 1, 2, 2);
     const drinkArray = drinkObj.getDrinkArray();
 
     //レバ焼き
